@@ -227,10 +227,9 @@ position:relative;
           flex-wrap: wrap-reverse;
       }
       .site-title {
-        font-size: 1.2em;
+        font-size: 1em;
       }
       .txtTitle {
-        margin-left: 15px;
-        padding-top: 0;
+        margin-top: 0;
       }
   }
