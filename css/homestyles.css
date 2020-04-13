@@ -227,9 +227,12 @@ position:relative;
           flex-wrap: wrap-reverse;
       }
       .site-title {
-        font-size: 1em;
+        font-size: .9em;
       }
       .txtTitle {
         margin-top: 0;
+      }
+      .pull-left{
+          margin-right: 8px;
       }
   }
