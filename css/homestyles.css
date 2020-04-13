@@ -202,7 +202,7 @@ position:relative;
   padding: 0 1em;
 }
 .footer-col {
-    padding: 2em 10px 1em;
+    padding: 50px 10px 1em;
 }
 .col1 {
     flex:2;
@@ -229,7 +229,7 @@ position:relative;
       .site-title {
         font-size: 1.2em;
       }
-      txtTitle {
+      .txtTitle {
         margin-left: 15px;
         margin-top: 15px;
       }
