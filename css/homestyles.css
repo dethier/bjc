@@ -41,16 +41,38 @@
     font-weight: bold;
     font-style: italic;
 }
- 
+* {
+    box-sizing:border-box;
+}
+ img {
+     width: 100%;
+     height: auto;
+ }
 body {
     font-family: 'RobotoRegular', Helvetica, Arial, sans-serif;
     font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
 }
-.site-title {
+
+.site-title,
+.pgTitle {
     font-family: 'RobotoRegular', Helvetica, Arial, sans-serif;
     font-size: 1.8em;
+    color: #fff;
+    text-decoration: none;
+}
+.site-title:hover {
     text-decoration: none;
     color: #fff;
+}
+.site-title:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.pgTitle {
+    padding-left: 24px;
 }
 h2 {
     font-family: 'RobotoRegular', Helvetica, Arial, sans-serif;
@@ -59,37 +81,34 @@ h2 {
     text-align: center;
     font-weight: normal;
     color: #fff;
+    margin-bottom: 1em;
 }
-.subtitle {
-    display: block;
-    text-transform: none;
-    font-size: .75em;
-    margin-top: 1em;
-    
-}
-.txtTitle {
-    margin-top: 10px;
-    display: block;
-}
+
 .pull-left {
     float: left;
-    margin-right: 24px;
 }
 .logo {
-    min-height: 60px;
-    padding-top: 15px;
+    min-height: 62px;
+    padding-top: 10px;
+    padding-left: 3px;
+}
+.logo img {
+    max-width: 43px;
 }
 
 header {
     background: #0C3559;
 }
+header .wrapper {
+    position: relative;
+}
 .hero {
-    background: url('imgs/BJC_splash_background-1700x750.png') no-repeat center center;
+    background: url('imgs/BJC_splash_background-1600x540.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 750px;
+    height: 540px;
     position: relative;
 }
 .hero .background-overlay {
@@ -103,12 +122,19 @@ header {
 
 }
 .hero .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 750px;
-   
+    max-height: 540px; 
+    position: relative;  
+    height: 100%;
 }
+.txtContainer {
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position:absolute;
+        bottom: 30px;
+}
+
 .btnContainer {
         display: flex;
         flex-wrap: wrap;
@@ -121,17 +147,30 @@ header {
         height: 0;
       }
 
-header .wrapper {
-    position:relative;
-}
 
+      .subtitle {
+        display: block;
+        text-transform: none;
+        font-size: .75em;
+        margin-top: .25em;
+        
+    }
+    .txtTitle {
+        display: block;
+        margin-left: 64px
+    }
+
+.large-logo {
+    position: absolute;
+    top: 28px;
+    left: 100px;
+}
 .hero .btn {
 border: 2px white solid;
 background-color:rgba(255, 255, 255, 0.4);
 display: block;
-margin: 20px;
-padding: 15px 30px;
-min-width: 200px;
+margin: 20px 20px 12px;
+padding: 15px 20px;
 font-size: 20px;
 -webkit-transition: border-color 0.2s ease, color 0.2s ease;
 -moz-transition: border-color 0.2s ease, color 0.2s ease;
@@ -142,9 +181,11 @@ text-decoration: none;
 color: #fff;
 position:relative;
 }
+.hero .btn1 {
+    font-size: 23px
+}
 .fas {
-    position: absolute;
-    right: 10px;
+    padding-left: 1em;
 }
 
 .trapezoid {
@@ -194,38 +235,42 @@ position:relative;
         padding-right: 15px; 
         padding-left: 15px; 
     } 
+    .large-logo img {
+        max-width: 70%;
+    }
 }
 /** Footer **/
 
 .footer {
   display: flex;
   padding: 0 1em;
+  flex-wrap: wrap;
 }
 .footer-col {
-    padding: 50px 10px 1em;
+    padding: 40px 10px 1em;
 }
-.col1 {
+.col1, .col2, .col5 {
     flex:2;
-}
-.col2 {
-    flex:1;
+    display: grid;
+    align-content: center;
 }
 .col3 {
-    flex: 10;
+    flex:1;
+    display: grid;
+    align-content: center;
+}
+.col4 {
+    flex: 8;
 }
 .footer p {
     font-size: .75em;
     line-height: 1.5;
-    padding-left: 1.5em;
 }
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-      .footer {
-          flex-wrap: wrap-reverse;
-      }
       .site-title {
         font-size: .9em;
       }
@@ -234,5 +279,18 @@ position:relative;
       }
       .pull-left{
           margin-right: 1.5em;
+      }
+      .txtContainer {
+          position: inherit;
+          
+      }
+      .large-logo {
+          position: inherit;
+          top: 0;
+          left: 0;
+      }
+      .large-logo {
+          max-width: 50%;
+          margin-top: 10px;
       }
   }
