@@ -291,6 +291,7 @@ and (orientation : landscape) {
       }
       .txtContainer {
           position: inherit;
+          font-size: 70%;
           
       }
       .large-logo {
@@ -318,5 +319,8 @@ and (orientation : landscape) {
     }
     .col4 {
         flex-basis:100%;
+    }
+    .hero .btn1 {
+        font-size: 20px;
     }
   }
