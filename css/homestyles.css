@@ -302,6 +302,9 @@ and (orientation : landscape) {
           max-width: 50%;
           margin-top: 10px;
       }
+      .footer-col {
+        padding: 10px 10px;
+      }
       .col1, .col2, .col3 {
         flex:2;
         display: grid;
@@ -314,7 +317,6 @@ and (orientation : landscape) {
         align-content: center;
     }
     .col4 {
-        flex: 8;
         flex-basis:100%;
     }
   }
