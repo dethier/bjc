@@ -280,7 +280,7 @@ and (orientation : landscape) {
 
 @media only screen 
   and (min-width: 320px) 
-  and (max-width: 480px) {
+  and (max-width: 667px) {
 
     
     .site-title {
@@ -307,7 +307,7 @@ and (orientation : landscape) {
           margin-top: 10px;
       }
       .btnContainer div {
-        width: 90%;
+        width: 80%;
     }
       .footer-col {
         padding: 10px 10px;
