@@ -306,9 +306,7 @@ and (orientation : landscape) {
           max-width: 50%;
           margin-top: 10px;
       }
-      .btnContainer div {
-        width: 80%;
-    }
+
       .footer-col {
         padding: 10px 10px;
       }
