@@ -189,13 +189,12 @@ transition: border-color 0.2s ease, color 0.2s ease;
 text-decoration: none;
 color: #fff;
 position:relative;
-min-width: 255px;
 }
 .hero .btn1 {
     font-size: 23px
 }
 .fas {
-    padding-left: 1em;
+    padding-left: 16px;
 }
 
 .trapezoid {
