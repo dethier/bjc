@@ -147,8 +147,11 @@ header .wrapper {
 .btnContainer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+      }
+      .btnContainer div {
+          width: 90%;
       }
       
       .break {
