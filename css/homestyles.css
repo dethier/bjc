@@ -150,9 +150,7 @@ header .wrapper {
         justify-content: space-around;
         align-items: center;
       }
-      .btnContainer div {
-          width: 90%;
-      }
+
       
       .break {
         flex-basis: 100%;
@@ -308,6 +306,9 @@ and (orientation : landscape) {
           max-width: 50%;
           margin-top: 10px;
       }
+      .btnContainer div {
+        width: 90%;
+    }
       .footer-col {
         padding: 10px 10px;
       }
