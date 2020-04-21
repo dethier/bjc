@@ -237,7 +237,7 @@ position:relative;
   flex-wrap: wrap;
 }
 .footer-col {
-    padding: 40px 10px 1em;
+    padding: 30px 10px 1em;
 }
 .col1, .col2, .col5 {
     flex:2;
