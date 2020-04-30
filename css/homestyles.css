@@ -55,7 +55,7 @@ body {
     margin-right: 0;
     margin-top: 0;
 }
-/** Wrapper **/
+/** WRAPPER **/
 .wrapper { 
     max-width: -webkit-calc(1200px - (30px * 2)); 
     max-width: calc(1200px - (30px * 2)); 
@@ -64,6 +64,7 @@ body {
     padding-right: 30px; 
     padding-left: 30px; 
 }
+/** HEADER **/
 
 .site-title,
 .pgTitle {
@@ -111,6 +112,22 @@ header {
 header .wrapper {
     position: relative;
 }
+.trapezoid {
+    position: absolute;
+    bottom: -11px;
+    left: 18px;
+    border-top-style: solid;
+    border-top-width: 12px;
+    border-top-color: #0C3559;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    height: 0;
+    width: 60px;
+    z-index: 100;
+}
+
+/** MAIN CONTENT **/
+
 .hero {
     background: url('imgs/BJC_splash_background-1600x540.png') no-repeat center center;
     -webkit-background-size: cover;
@@ -198,19 +215,8 @@ position:relative;
     padding-left: 16px;
 }
 
-.trapezoid {
-    position: absolute;
-    bottom: -11px;
-    left: 18px;
-    border-top-style: solid;
-    border-top-width: 12px;
-    border-top-color: #0C3559;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    height: 0;
-    width: 60px;
-    z-index: 100;
-}
+/** FOOTER **/
+
 .footer  {
     position: relative;
 }
@@ -228,8 +234,6 @@ position:relative;
     z-index: 100;
 
 }
-
-/** Footer **/
 
 .footer {
   display: flex;
@@ -259,6 +263,8 @@ position:relative;
     font-size: .75em;
     line-height: 1.5;
 }
+/** MEDIA QUERIES **/
+
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
